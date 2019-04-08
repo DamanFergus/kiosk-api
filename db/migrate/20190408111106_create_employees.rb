@@ -5,9 +5,7 @@ class CreateEmployees < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :email
       t.integer :mobnum
-      t.decimal :balance
       t.integer :pin
-
       t.timestamps
     end
   end
