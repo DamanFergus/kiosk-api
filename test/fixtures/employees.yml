@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  empid: 1
+  name: MyString
+  email: MyString
+  mobnum: 1
+  balance: 9.99
+  pin: 1
+
+two:
+  empid: 1
+  name: MyString
+  email: MyString
+  mobnum: 1
+  balance: 9.99
+  pin: 1
