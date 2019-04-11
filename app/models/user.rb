@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_secure_password
 
   # Model associations
-  # has_one :cards, foreign_key: :id
+  has_many :cards, foreign_key: :created_by
   # Validations
   validates_presence_of :empid, :mobile, :name, :email, :password_digest
 end
