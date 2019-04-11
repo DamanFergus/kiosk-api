@@ -53,7 +53,7 @@ RSpec.describe 'Cards API', type: :request do
   # Test suite for POST /cards
   describe 'POST /cards' do
     # valid payload
-    let(:valid_attributes) { { balance: '11.11' } }
+    let(:valid_attributes) { { balance: '11.11' , created_by: "1" } }
 
     context 'when the request is valid' do
       before { post '/cards', params: valid_attributes }
