@@ -34,7 +34,7 @@ class CardsController < ApplicationController
 
   def card_params
     # whitelist params
-    params.permit(:balance)
+    params.permit(:balance, :created_by)
   end
 
   def set_card
