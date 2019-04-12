@@ -3,13 +3,13 @@ class CardsController < ApplicationController
 
   # GET /cards
   def index
-    @cards = Card.all
+    @cards = current_user.cards
     json_response(@cards)
   end
 
   # POST /cards
   def create
-    @card = Card.create!(card_params)
+    @card = current_user.cards.create!(card_params)
     json_response(@card, :created)
   end
 
@@ -34,7 +34,7 @@ class CardsController < ApplicationController
 
   def card_params
     # whitelist params
-    params.permit(:balance, :created_by)
+    params.permit(:balance)
   end
 
   def set_card
